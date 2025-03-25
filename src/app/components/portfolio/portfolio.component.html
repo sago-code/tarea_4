@@ -1,0 +1,69 @@
+<div class="portfolio-container container">
+    <header class="header-section text-center">
+        <h2 class="display-4">Portafolio Santiago Orjuela Vera</h2>
+        <h3 class="text-secondary">Perfil</h3>
+        <p class="lead">Técnico en programación de software</p>
+    </header>
+
+    <div class="projects-section">
+        <h4 class="display-5 mb-4">Proyectos</h4>
+        <div class="carousel-container">
+            <swiper-container
+                loop="true"
+                autoplay="true"
+                navigation="true"
+                pagination="false"
+                slides-per-view="auto"
+                space-between="20"
+                class="mySwiper"
+            >
+                <swiper-slide *ngFor="let proyecto of proyectos">
+                    <div class="proyecto-card">
+                        <div class="card-background" [style.background-image]="'url(' + proyecto.imagen + ')'"></div>
+                        <div class="card-content">
+                            <h3 class="proyecto-titulo">{{proyecto.titulo}}</h3>
+                            <div class="proyect-info">
+                                <p class="proyect-description">{{proyecto.descripcion}}</p>
+                            </div>
+                            <div class="card-overlay">
+                                <p class="proyecto-descripcion">lenguajes: {{proyecto.lenguajes}}</p>
+                                <p class="proyecto-descripcion">frameworks: {{proyecto.frameworks}}</p>
+                                <a [href]="proyecto.github" target="_blank">
+                                    <button class="btn btn-light mt-3">Ver detalles</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </div>
+
+    <footer class="site-footer mt-5">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Contacto</h3>
+                    <p>Email: orjuelasantiago1152002&#64;gmail.com</p>
+                    <p>Tel: +57 302 837 0313</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Sígueme</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/sago-code" class="social-link"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/santiago-orjuela-vera-062a61264/" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://www.instagram.com/santiagoorjuelavera/" class="social-link"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Santiago Orjuela Vera. Todos los derechos reservados.</p>
+            </div>
+            <div>
+                <button class="btn btn-transparent mt-3" [routerLink]="['/home-page']">
+                    Ir a segundo punto (home-page)
+                </button>                  
+            </div>
+        </div>
+    </footer>
+</div>

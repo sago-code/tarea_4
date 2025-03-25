@@ -1,59 +1,116 @@
-# Tarea4
+# Aplicación de Portafolio Personal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+## Descripción General
+Esta es una aplicación web moderna construida con Angular que funciona como un sitio web de portafolio personal. La aplicación muestra proyectos, información personal y experiencia profesional de manera interactiva y responsiva.
 
-## Development server
+## Características
 
-To start a local development server, run:
+### Página de Inicio
+- Sección hero con mensaje de bienvenida a pantalla completa
+- Sección de características destacando tres capacidades principales:
+  - Fácil de Usar
+  - Seguridad
+  - Alta Velocidad
+- Sección de testimonios con carrusel interactivo
 
+### Sección de Portafolio
+- Exhibición interactiva de proyectos usando Swiper.js
+- Tarjetas de proyectos con:
+  - Título del proyecto
+  - Descripción
+  - Tecnologías utilizadas (lenguajes y frameworks)
+  - Enlaces a GitHub
+  - Efectos hover con información adicional
+- Diseño responsivo para diferentes tamaños de pantalla
+
+## Stack Tecnológico
+
+### Tecnologías Principales
+- Angular (Última Versión)
+- TypeScript
+- HTML5
+- CSS3
+
+### Dependencias Principales
+- Bootstrap 5.3.3
+- Swiper.js para carruseles
+- Bootstrap Icons
+- Angular Material (tema Indigo-Pink)
+
+### Estructura del Proyecto
+  src/
+  ├── app/
+  │   ├── components/
+  │   │   ├── homePage/
+  │   │   └── portfolio/
+  │   ├── app.component
+  │   ├── app.config
+  │   └── app.routes
+  ├── assets/
+  └── styles.css
+
+
+## Implementación de Características
+
+### Diseño Responsivo
+- Enfoque mobile-first
+- Puntos de quiebre en:
+  - 768px para tablets
+  - 480px para dispositivos móviles
+- Sistema de rejilla flexible usando Bootstrap
+
+### Elementos Interactivos
+- Integración de carrusel Swiper
+- Efectos hover en tarjetas de proyectos
+- Transiciones y animaciones suaves
+- Carga dinámica de contenido
+
+### Renderizado del Lado del Servidor
+- Implementa Angular Universal para SSR
+- Configuración del servidor Express.js
+- Optimizado para rendimiento y SEO
+
+## Proyectos Mostrados
+La sección de portafolio muestra varios proyectos incluyendo:
+- Access Siska Movil (React Native)
+- Access Siska Web (React)
+- Cocktail App (Laravel)
+- Test Quality Assurance (React, Nx, Jest)
+- Kabod Style Ecommerce (React)
+
+## Contenido de la Página de Inicio
+La página principal presenta:
+- Imagen hero a pantalla completa con mensaje de bienvenida
+- Sección de características principales con iconos ilustrativos:
+  - Sección "Fácil de Usar" con estrella
+  - Sección "Seguridad" con candado
+  - Sección "Alta Velocidad" con marca de verificación
+- Carrusel de testimonios que incluye:
+  - Testimonio de Juan Pérez
+  - Testimonio de María López
+  - Testimonio de Carlos Gómez
+
+## Comenzando
+### Prerrequisitos
+- Node.js
+- Angular CLI
+
+### Instalación
+1. Clonar el repositorio
+2. Instalar dependencias:
+```bash
+npm install
+```
+3. Ejecutar el servidor de desarrollo (puedes usar cualquiera de estos comandos):
 ```bash
 ng serve
+npm run start
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Servidor de Desarrollo
+El servidor se ejecuta en localhost:4200.
+## Autor
+Santiago Orjuela Vera
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Portafolio que muestra varios proyectos de desarrollo full-stack
+- Pagina de simulacion de pagina de inicio

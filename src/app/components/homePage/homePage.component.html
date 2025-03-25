@@ -1,0 +1,65 @@
+<div class="home-container">
+    <header class="hero text-white text-center d-flex align-items-center justify-content-center vh-100" [ngStyle]="{'background-image': 'url(' + heroes[0].imgHeroe + ')'}">
+        <div class="container">
+            <h1 class="display-4">Bienvenido a Nuestra Aplicación</h1>
+            <p class="lead">Descubre características increíbles y testimonios inspiradores.</p>
+        </div>
+    </header>
+    
+    <!-- Sección de Características -->
+    <section class="container text-center py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="currentColor"/>
+                </svg>
+                <h3>Fácil de Usar</h3>
+                <p>Interfaz intuitiva y amigable.</p>
+            </div>
+            <div class="col-md-4">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C7.58 2 4 5.58 4 10V14H2V22H22V14H20V10C20 5.58 16.42 2 12 2ZM12 4C15.31 4 18 6.69 18 10V14H6V10C6 6.69 8.69 4 12 4ZM4 16H20V20H4V16Z" fill="currentColor"/>
+                </svg>
+                <h3>Seguridad</h3>
+                <p>Protección avanzada de datos.</p>
+            </div>
+            <div class="col-md-4">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12L9 18L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3>Alta Velocidad</h3>
+                <p>Procesos optimizados y rápidos.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Testimonios -->
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Testimonios</h2>
+            <swiper-container 
+                loop="true"
+                autoplay="true"
+                navigation="true"
+                pagination="false"
+                slides-per-view="auto"
+                space-between="20"
+            >
+                <swiper-slide>
+                    <p class="lead">"Esta aplicación ha cambiado mi vida para mejor." - Juan Pérez</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <p class="lead">"Excelente servicio y facilidad de uso." - María López</p>
+                </swiper-slide>
+                <swiper-slide>
+                    <p class="lead">"Altamente recomendado para todos." - Carlos Gómez</p>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+    <div>
+        <button class="btn btn-transparent mt-3" [routerLink]="['/portfolio']">
+            Ir a punto 1, portafolio
+        </button>
+    </div>
+</div>

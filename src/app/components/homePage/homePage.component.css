@@ -1,0 +1,40 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+.home-container {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .container h1 {
+        font-size: 2rem;
+    }
+    .container p {
+        font-size: 1rem;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .col-md-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+    .container p {
+        font-size: 1rem;
+    }
+}
